@@ -13,6 +13,32 @@
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
     <title>Portfolio | Jigar Sable</title>
+    <style>
+      .alert {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        display: none;
+        z-index: 1000;
+      }
+  
+      /* Animation */
+      @keyframes slideIn {
+        from { top: -50px; opacity: 0; }
+        to { top: 20px; opacity: 1; }
+      }
+  
+      @keyframes slideOut {
+        from { top: 20px; opacity: 1; }
+        to { top: -50px; opacity: 0; }
+      }
+    </style>
 </head>
 <body oncontextmenu="return false">
 
@@ -295,42 +321,83 @@
 
 <!-- contact section starts -->
 <section class="contact" id="contact">
-  
   <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
   <div class="container">
     <div class="content">
       <div class="image-box">
         <img draggable="false" src="./assets/images/contact1.png" alt="">
       </div>
-    <form id="contact-form">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
+      <form id="contact-form">
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="name" placeholder="Name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="email" name="email" placeholder="Email" oninput="this.value = this.value.toLowerCase();" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="phone" placeholder="Phone">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="message">
+            <textarea placeholder="Message" name="message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
         </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
+        <div class="button-area">
+          <button type="submit">Submit <i class="fa fa-paper-plane"></i></button>
         </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
   </div>
 </section>
+
+<div class="alert" id="alert"></div>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Retrieve form data
+    const formData = new FormData(event.target);
+    
+    // Prepare email content
+    const subject = 'Contact Form Submission';
+    const body = `
+      Name: ${formData.get('name')}
+      Email: ${formData.get('email')}
+      Phone: ${formData.get('phone')}
+      Message: ${formData.get('message')}
+    `;
+
+    // Encode email address
+    const emailAddress = 'malik.hasnain1040@gmail.com';
+    const encodedEmailAddress = encodeURIComponent(emailAddress);
+
+    // Construct mailto URL
+    const mailtoURL = `mailto:${encodedEmailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open mail client with mailto URL
+    window.location.href = mailtoURL;
+
+    // Show success alert after 1.5 seconds
+    setTimeout(function() {
+      const alertElement = document.getElementById('alert');
+      alertElement.textContent = 'Your message has been sent successfully!';
+      alertElement.style.display = 'block';
+      setTimeout(function() {
+        alertElement.style.animation = 'slideOut 0.5s';
+        setTimeout(function() {
+          alertElement.style.display = 'none';
+          alertElement.style.animation = 'none';
+        }, 500);
+      }, 3000); // Hide the alert after 3 seconds
+    }, 4000); // Display the alert after 1.5 seconds
+    event.target.reset();
+  });
+</script>
 <!-- contact section ends -->
 
 
