@@ -375,3 +375,7 @@ header .navbar ul li a:hover{
       from { top: 20px; opacity: 1; }
       to { top: -50px; opacity: 0; }
     }
+    .nav-logo
+    {
+      height: 48px;
+    }
