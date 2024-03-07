@@ -5,7 +5,7 @@
     },
     {
         "name": "TailwindCSS",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
+        "icon": "https://raw.githubusercontent.com/Hasnain-malikk/logo/main/TailwindCSS.png"
     },
     {
         "name": "Bootstrap",
@@ -32,18 +32,6 @@
         "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
     },
     {
-        "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-    },
-    {
-        "name": "C++",
-        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
-    },
-    {
-        "name": "Netlify",
-        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
-    },
-    {
         "name": "Git VCS",
         "icon": "https://img.icons8.com/color/48/000000/git.png"
     },
@@ -52,7 +40,35 @@
         "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
     {
+        "name": "Netlify",
+        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "C++",
+        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+    },
+    {
         "name": "DSA",
-        "icon": "https://raw.githubusercontent.com/Hasnain-malikk/ui-component/main/dsa.png"
-    }  
+        "icon": "https://raw.githubusercontent.com/Hasnain-malikk/logo/main/dsa.png"
+    },
+    {
+        "name": "Solidity",
+        "icon": "https://raw.githubusercontent.com/Hasnain-malikk/logo/main/solidity.png"
+    },
+    {
+        "name": "ML",
+        "icon": "https://raw.githubusercontent.com/Hasnain-malikk/logo/main/ML.png"
+    },
+    {
+        "name": "ANN",
+        "icon": "https://raw.githubusercontent.com/Hasnain-malikk/logo/main/ANN.png"
+    },
+    {
+        "name": "Web 3.0",
+        "icon": "https://raw.githubusercontent.com/Hasnain-malikk/logo/main/Web%203.0.png"
+    }              
 ]
