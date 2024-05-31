@@ -1,150 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="jigar sable, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
-    <title>Portfolio | Malik Hasnain</title>
-    <style>
-      .alert {
-        position: fixed;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="jigar sable, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+  <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
+  <title>Portfolio | Malik Hasnain</title>
+  <style>
+    .alert {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      /* Green */
+      color: white;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      display: none;
+      z-index: 1000;
+    }
+
+    /* Animation */
+    @keyframes slideIn {
+      from {
+        top: -50px;
+        opacity: 0;
+      }
+
+      to {
         top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 10px 20px;
-        background-color: #4CAF50; /* Green */
-        color: white;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        display: none;
-        z-index: 1000;
+        opacity: 1;
       }
-  
-      /* Animation */
-      @keyframes slideIn {
-        from { top: -50px; opacity: 0; }
-        to { top: 20px; opacity: 1; }
+    }
+
+    @keyframes slideOut {
+      from {
+        top: 20px;
+        opacity: 1;
       }
-  
-      @keyframes slideOut {
-        from { top: 20px; opacity: 1; }
-        to { top: -50px; opacity: 0; }
+
+      to {
+        top: -50px;
+        opacity: 0;
       }
-      .nav-logo {
-        height: 48px;
-      }
-    </style>
+    }
+
+    .nav-logo {
+      height: 48px;
+    }
+  </style>
 </head>
+
 <body oncontextmenu="return false">
 
-<!-- pre loader -->
-<!-- <div class="loader-container">
+  <!-- pre loader -->
+  <!-- <div class="loader-container">
   <img draggable="false" src="./assets/images/preloader.gif" alt="">
 </div> -->
 
-<!-- navbar starts -->
-<header>
-        <a href=""><img  class="nav-logo" src="./assets/images/logo.png" alt="logo"></a>
+  <!-- navbar starts -->
+  <header>
+    <a href=""><img class="nav-logo" src="./assets/images/logo.png" alt="logo"></a>
 
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
 
 
-<!-- hero section starts -->
-<section class="home" id="home">
+  <!-- hero section starts -->
+  <section class="home" id="home">
     <div id="particles-js"></div>
 
     <div class="content">
-    <h2>Hi There,<br/> I'm Malik <span>Hasnain</span></h2>
-    <p>i am into <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="socials">
+      <h2>Hi There,<br /> I'm Malik <span>Hasnain</span></h2>
+      <p>i am into <span class="typing-text"></span></p>
+      <a href="#about" class="btn"><span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/malik-hasnain-7a2b392a2/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="https://github.com/Hasnain-malikk" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/hasnain-mahvia-7a2b392a2/"
+              target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/Hasnain-malikk" target="_blank"><i
+                class="fab fa-github"></i></a></li>
           <!-- <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
           <!-- <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li> -->
-          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/malikhasnaindev/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li> <a href="mailto:malik.hasnain1040@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a></li>
-          <li><a class="facebook" aria-label="Facebook" href="https://www.facebook.com/malik.husnain.1612/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/malikhasnaindev/"
+              target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li> <a href="mailto:malik.hasnain1040@gmail.com" class="fas fa-envelope" aria-label="Mail"
+              target="_blank"></a></li>
+          <li><a class="facebook" aria-label="Facebook" href="https://www.facebook.com/malik.husnain.1612/"
+              target="_blank"><i class="fab fa-facebook"></i></a></li>
         </ul>
       </div>
     </div>
-<div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
-</div>
-</section>
-<!-- hero section ends -->
+    <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+    </div>
+  </section>
+  <!-- hero section ends -->
 
 
-<!-- about section starts -->
-<section class="about" id="about">
+  <!-- about section starts -->
+  <section class="about" id="about">
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
+
     <div class="row">
 
-    <div class="image">
+      <div class="image">
         <img draggable="false" class="tilt" src="./assets/images/profile.jpeg" alt="">
-    </div>
-    <div class="content">
+      </div>
+      <div class="content">
         <h3>I'm Hasnain</h3>
         <span class="tag">Front-end Developer</span>
-        
-        <p>I am a <b>React.js developer</b> and pursuing a bachelor's degree in Artificial Intelligence. Passionate about learning and teamwork, I excel in project management.<b> My aim? </b>Creating <b>Web Applications with AI Functionalities</b>. Let's collaborate to bring innovative AI-powered solutions to the digital world.</p>
-        
+
+        <p>I am a <b>React.js developer</b> and pursuing a bachelor's degree in Computer Science. Passionate
+          about learning and teamwork, I excel in project management.<b> My aim? </b>Creating <b>Web Applications with
+            Interactive Design</b>. Let's collaborate to bring Great User Experience to the digital world </p>
+
         <div class="box-container">
-            <!-- <div class="box">
+          <!-- <div class="box">
               <p><span> age: </span> 20</p>
             </div> -->
-            <div class="box">
-              <p><span> email : </span> malik.hasnain4546@gmail.com</p>
-              <p><span> phone : </span> +92 332 9096478</p>
-              <p><span> place : </span> Rawalpindi, Pakistan - 45600</p>
-            </div>
+          <div class="box">
+            <p><span> email : </span> malik.hasnain4546@gmail.com</p>
+            <p><span> phone : </span> +92 332 9096478</p>
+            <p><span> place : </span> Rawalpindi, Pakistan - 45600</p>
+          </div>
         </div>
-        
+
         <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/11ytp_D3JWEEHVisUW2T7cY6I78b50pus/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
+          <a href="https://drive.google.com/file/d/11ytp_D3JWEEHVisUW2T7cY6I78b50pus/view?usp=sharing" target="_blank"
+            class="btn"><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
         </div>
 
+      </div>
     </div>
-    </div>
-</section>
-<!-- about section ends -->
+  </section>
+  <!-- about section ends -->
 
-<!-- skills section starts -->
-<section class="skills" id="skills">
+  <!-- skills section starts -->
+  <section class="skills" id="skills">
 
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
 
     <div class="container">
-          <div class="row" id="skillsContainer">
+      <div class="row" id="skillsContainer">
 
-            <!-- <div class="bar">
+        <!-- <div class="bar">
               <div class="info">
                 <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
                 <span>AdobeXD</span>
@@ -152,65 +187,65 @@
             </div> -->
 
       </div>
-</div>
-</section>
-<!-- skills section ends -->
+    </div>
+  </section>
+  <!-- skills section ends -->
 
 
-<!-- education section starts -->
-<section class="education" id="education">
+  <!-- education section starts -->
+  <section class="education" id="education">
 
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
 
     <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
 
     <div class="box-container">
 
-    <div class="box">
+      <div class="box">
         <div class="image">
-        <img draggable="false" src="./assets/images/educat/university.jpeg" alt="">
+          <img draggable="false" src="./assets/images/educat/university.jpeg" alt="">
         </div>
         <div class="content">
-        <h3>Bachelor of Artificial Intelligence</h3>
-        <p>PMAS Arid Agriculture University</p>
-        <h4>2022-2026 | Pursuing</h4>
+          <h3>Bachelor of Artificial Intelligence</h3>
+          <p>PMAS Arid Agriculture University</p>
+          <h4>2022-2026 | Pursuing</h4>
         </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="./assets/images/educat/college.jpeg" alt="">
       </div>
-      <div class="content">
-      <h3>Intermediate of Computer Science</h3>
-      <p>Emalah Foundation School and College</p>
-      <h4>2019-2021 | Completed</h4>
-      </div>
-    </div>
 
-    <div class="box">
+      <div class="box">
         <div class="image">
-        <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+          <img draggable="false" src="./assets/images/educat/college.jpeg" alt="">
         </div>
         <div class="content">
-        <h3>Matriculation in Science</h3>
-        <p>Nasir Foundation School and College</p>
-        <h4>2018 | Completed</h4>
+          <h3>Intermediate of Computer Science</h3>
+          <p>Emalah Foundation School and College</p>
+          <h4>2019-2021 | Completed</h4>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Matriculation in Science</h3>
+          <p>Nasir Foundation School and College</p>
+          <h4>2018 | Completed</h4>
         </div>
 
-</div>
-</section>
-<!-- education section ends -->
+      </div>
+  </section>
+  <!-- education section ends -->
 
 
-<!-- work project section starts -->
-<section class="work" id="work">
+  <!-- work project section starts -->
+  <section class="work" id="work">
 
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
 
-  <div class="box-container">
+    <div class="box-container">
 
-    <!-- <div class="box tilt">
+      <!-- <div class="box tilt">
       <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
       <div class="content">
         <div class="tag">
@@ -226,262 +261,272 @@
       </div>
     </div> -->
 
-</div>
+    </div>
 
-<div class="viewall">
-  <a href="/projects" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a>
-</div>
+    <div class="viewall">
+      <a href="/projects" class="btn"><span>View All</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
 
-</section>
-<!-- work project section ends -->
+  </section>
+  <!-- work project section ends -->
 
-<!-- experience section starts -->
-<section class="experience" id="experience">
+  <!-- experience section starts -->
+  <section class="experience" id="experience">
 
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
 
-  <div class="timeline">
+    <div class="timeline">
 
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>Personal Projects</h2>
-        </div>
-        <div class="desc">
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Personal Projects</h2>
+          </div>
+          <div class="desc">
             <h3>ReactJS Developer</h3>
             <p>June 2023 - present</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>Currently No Experience</h2>
-        </div>
-        <div class="desc">
-            <h3>Software Developer</h3>
-            <p>present</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>Currently No Experience</h2>
-        </div>
-        <div class="desc">
-            <h3>Software Developer</h3>
-            <p>present</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>Currently No Experience</h2>
-        </div>
-        <div class="desc">
-            <h3>Software Developer</h3>
-            <p>present</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>Currently No Experience</h2>
-        </div>
-        <div class="desc">
-            <h3>Software Developer</h3>
-            <p>present</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>Currently No Experience</h2>
-        </div>
-        <div class="desc">
-            <h3>Software Developer</h3>
-            <p>present</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="morebtn">
-    <a href="/experience" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-  </a>
-  </div>
-
-</div>
-
-</section>
-<!-- experience section ends -->
-
-<!-- contact section starts -->
-<section class="contact" id="contact">
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
-      </div>
-      <form id="contact-form">
-        <div class="form-group">
-          <div class="field">
-            <input type="text" name="name" placeholder="Name" required>
-            <i class='fas fa-user'></i>
-          </div>
-          <div class="field">
-            <input type="email" name="email" placeholder="Email" oninput="this.value = this.value.toLowerCase();" required>
-            <i class='fas fa-envelope'></i>
-          </div>
-          <div class="field">
-            <input type="text" name="phone" placeholder="Phone(optional)">
-            <i class='fas fa-phone-alt'></i>
-          </div>
-          <div class="message">
-            <textarea placeholder="Message" name="message" required></textarea>
-            <i class="fas fa-comment-dots"></i>
           </div>
         </div>
-        <div class="button-area">
-          <button type="submit">Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Currently No Experience</h2>
+          </div>
+          <div class="desc">
+            <h3>Software Developer</h3>
+            <p>present</p>
+          </div>
         </div>
-      </form>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Currently No Experience</h2>
+          </div>
+          <div class="desc">
+            <h3>Software Developer</h3>
+            <p>present</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Currently No Experience</h2>
+          </div>
+          <div class="desc">
+            <h3>Software Developer</h3>
+            <p>present</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Currently No Experience</h2>
+          </div>
+          <div class="desc">
+            <h3>Software Developer</h3>
+            <p>present</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Currently No Experience</h2>
+          </div>
+          <div class="desc">
+            <h3>Software Developer</h3>
+            <p>present</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
 
-<div class="alert" id="alert"></div>
+    <div class="morebtn">
+      <a href="/experience" class="btn"><span>View All</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
 
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    
-    // Retrieve form data
-    const formData = new FormData(event.target);
-    
-    // Prepare email content
-    const subject = 'Contact Form Submission';
-    const body = `
+    </div>
+
+  </section>
+  <!-- experience section ends -->
+
+  <!-- contact section starts -->
+  <section class="contact" id="contact">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="./assets/images/contact1.png" alt="">
+        </div>
+        <form id="contact-form">
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="email" name="email" placeholder="Email" oninput="this.value = this.value.toLowerCase();"
+                required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone(optional)">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit">Submit <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="alert" id="alert"></div>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Retrieve form data
+      const formData = new FormData(event.target);
+
+      // Prepare email content
+      const subject = 'Contact Form Submission';
+      const body = `
       Name: ${formData.get('name')}
       Email: ${formData.get('email')}
       Phone: ${formData.get('phone')}
       Message: ${formData.get('message')}
     `;
 
-    // Encode email address
-    const emailAddress = 'malik.hasnain1040@gmail.com';
-    const encodedEmailAddress = encodeURIComponent(emailAddress);
+      // Encode email address
+      const emailAddress = 'malik.hasnain1040@gmail.com';
+      const encodedEmailAddress = encodeURIComponent(emailAddress);
 
-    // Construct mailto URL
-    const mailtoURL = `mailto:${encodedEmailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      // Construct mailto URL
+      const mailtoURL = `mailto:${encodedEmailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    // Open mail client with mailto URL
-    window.location.href = mailtoURL;
+      // Open mail client with mailto URL
+      window.location.href = mailtoURL;
 
-    // Show success alert after 1.5 seconds
-    setTimeout(function() {
-      const alertElement = document.getElementById('alert');
-      alertElement.textContent = 'Your message has been sent successfully!';
-      alertElement.style.display = 'block';
-      setTimeout(function() {
-        alertElement.style.animation = 'slideOut 0.5s';
-        setTimeout(function() {
-          alertElement.style.display = 'none';
-          alertElement.style.animation = 'none';
-        }, 500);
-      }, 3000); // Hide the alert after 3 seconds
-    }, 4000); // Display the alert after 1.5 seconds
-    event.target.reset();
-  });
-</script>
-<!-- contact section ends -->
+      // Show success alert after 1.5 seconds
+      setTimeout(function () {
+        const alertElement = document.getElementById('alert');
+        alertElement.textContent = 'Your message has been sent successfully!';
+        alertElement.style.display = 'block';
+        setTimeout(function () {
+          alertElement.style.animation = 'slideOut 0.5s';
+          setTimeout(function () {
+            alertElement.style.display = 'none';
+            alertElement.style.animation = 'none';
+          }, 500);
+        }, 3000); // Hide the alert after 3 seconds
+      }, 4000); // Display the alert after 1.5 seconds
+      event.target.reset();
+    });
+  </script>
+  <!-- contact section ends -->
 
 
-<!-- footer section starts -->
-<section class="footer">
+  <!-- footer section starts -->
+  <section class="footer">
 
-  <div class="box-container">
+    <div class="box-container">
 
       <div class="box">
-          <h3>Hasnain's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Drop a appreciation line in contact box with your name for motivation. ✨<br/> <br/> Keep Rising 🚀</p>
+        <h3>Hasnain's Portfolio</h3>
+        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Drop a
+          appreciation line in contact box with your name for motivation. ✨<br /> <br /> Keep Rising 🚀</p>
       </div>
 
       <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+        <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
       </div>
 
       <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+92 332 9096478</p>
-          <p> <i class="fas fa-envelope"></i>malik.hasnain1040@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Rawalpindi, Pakistan - 45600</p>
-          <div class="share">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-phone"></i>+92 332 9096478</p>
+        <p> <i class="fas fa-envelope"></i>malik.hasnain1040@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>Rawalpindi, Pakistan - 45600</p>
+        <div class="share">
 
-              <a href="https://www.linkedin.com/in/malik-hasnain-7a2b392a2/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/Hasnain-malikk" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:malik.hasnain1040@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-              <a href="https://www.instagram.com/malikhasnaindev/" class="fab fa-instagram" aria-label="Instagram" target="_blank"></a>
-              <a href="https://www.facebook.com/malik.husnain.1612" class="fab fa-facebook" aria-label="Facebook" target="_blank"></a>
-          </div>
+          <a href="https://www.linkedin.com/in/malik-hasnain-7a2b392a2/" class="fab fa-linkedin" aria-label="LinkedIn"
+            target="_blank"></a>
+          <a href="https://github.com/Hasnain-malikk" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+          <a href="mailto:malik.hasnain1040@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+          <a href="https://www.instagram.com/malikhasnaindev/" class="fab fa-instagram" aria-label="Instagram"
+            target="_blank"></a>
+          <a href="https://www.facebook.com/malik.husnain.1612" class="fab fa-facebook" aria-label="Facebook"
+            target="_blank"></a>
+        </div>
       </div>
-  </div>
+    </div>
 
-  <h1 class="credit">Copyright ©<a href="https://www.linkedin.com/in/malik-hasnain-7a2b392a2/"> Malik Hasnain</a> - All rights reserved</h1>
+    <h1 class="credit">Copyright ©<a href="https://www.linkedin.com/in/malik-hasnain-7a2b392a2/"> Malik Hasnain</a> -
+      All rights reserved</h1>
 
-</section>
-<!-- footer section ends -->
-
-
-<!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
+  </section>
+  <!-- footer section ends -->
 
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- scroll back to top -->
 
-<!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- typed.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
+  <!-- particle.js links -->
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
 
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-<script src="./assets/js/script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+  <script src="./assets/js/script.js"></script>
 
 </body>
+
 </html>

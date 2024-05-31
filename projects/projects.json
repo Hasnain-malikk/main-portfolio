@@ -10,16 +10,6 @@
     }
   },
   {
-    "name": "Portfolio Website",
-    "desc": "My personal portfolio website. Build using HTML CSS and JavaScript. Source code is in private repository. Contact me for source code.",
-    "image": "portfolio-website",
-    "category": "all",
-    "links": {
-      "view": "/",
-      "code": "https://github.com/Hasnain-malikk/main-portfolio"
-    }
-  },
-  {
     "name": "News app React",
     "desc": "Gives you the news of your interest or any topic you want. Build using ReactJS HTML and Bootstrap",
     "image": "news-app",
@@ -32,18 +22,28 @@
   {
     "name": "E commerce Website",
     "image": "e-commerce",
-    "desc": "E commerce web application. build using ReactJS and Tailwind CSS.User can buy anything he desires.",
+    "desc": "E commerce web application. build using ReactJS, HTML and CSS.User can buy anything he desires.",
     "links": {
-      "view": "https://65e9c590d0e09f09d0187d3d--creative-biscotti-378396.netlify.app/",
-      "code": "https://github.com/Hasnain-malikk/E-commerce/blob/main/README.md"
+      "view": "https://e-shop-nest.netlify.app/",
+      "code": "https://github.com/Hasnain-malikk/E-commerce"
+    }
+  },
+  {
+    "name": "Portfolio Web App",
+    "desc": "My personal portfolio website. Build using HTML CSS and JavaScript. Source code is in private repository. Contact me for source code.",
+    "image": "portfolio-website",
+    "links": {
+      "view": "/",
+      "code": "https://github.com/Hasnain-malikk/main-portfolio"
     }
   },
   {
     "name": "Netflix Clone",
     "desc": "Netflix front-end user interface clone. It is build using HTML CSS and JavaScript. Provides you the movies you want.",
+    "category": "all",
     "image": "netflix-clone",
     "links": {
-      "view": "https://effulgent-naiad-a17021.netlify.app",
+      "view": "https://github.com/Hasnain-malikk/Netflix-clone-UI",
       "code": "https://github.com/Hasnain-malikk/Netflix-clone-UI"
     }
   },
