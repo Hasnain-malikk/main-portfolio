@@ -20,6 +20,15 @@
     }
   },
   {
+    "name": "Hepta Travel",
+    "desc": "Ticket Booking website. Build using React Js, HTML and CSS,",
+    "image": "hepta-react",
+    "links": {
+      "view": "https://hepta-travel.netlify.app/",
+      "code": "https://github.com/Hasnain-malikk/Hepta-React"
+    }
+  },
+  {
     "name": "E commerce Website",
     "image": "e-commerce",
     "desc": "E commerce web application. build using ReactJS, HTML and CSS.User can buy anything he desires.",
@@ -51,6 +60,7 @@
     "name": "Text app React",
     "desc": "Textutiles is a text app and can convert text into a form u want. Bulid using ReactJS and Bootstrap.",
     "image": "text-app",
+    "category": "all",
     "links": {
       "view": "https://mytextutile.netlify.app",
       "code": "https://github.com/Hasnain-malikk/Textutiles-react-app"
