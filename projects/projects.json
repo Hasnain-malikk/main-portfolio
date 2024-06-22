@@ -20,8 +20,17 @@
     }
   },
   {
+    "name": "Arclab - Architect Web App",
+    "desc": "ArcLab - Architect web app build using React Js. and GSAP.",
+    "image": "arclab-react",
+    "links": {
+      "view": "https://arclab.netlify.app/",
+      "code": "https://github.com/Hasnain-malikk/ArcLab-react"
+    }
+  },
+  {
     "name": "Hepta Travel",
-    "desc": "Ticket Booking website. Build using React Js, HTML and CSS,",
+    "desc": "Ticket Booking website. Build using React Js, HTML and CSS.",
     "image": "hepta-react",
     "links": {
       "view": "https://hepta-travel.netlify.app/",
@@ -41,6 +50,7 @@
     "name": "Portfolio Web App",
     "desc": "My personal portfolio website. Build using HTML CSS and JavaScript. Source code is in private repository. Contact me for source code.",
     "image": "portfolio-website",
+    "category": "all",
     "links": {
       "view": "/",
       "code": "https://github.com/Hasnain-malikk/main-portfolio"
