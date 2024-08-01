@@ -20,6 +20,15 @@
     }
   },
   {
+    "name": "Constra - Web App",
+    "desc": "Constra - Civil Engineer web app build using React Js. and Swiper.",
+    "image": "constra-react",
+    "links": {
+      "view": "https://constra-react.netlify.app/",
+      "code": "https://github.com/Hasnain-malikk/Constra-react"
+    }
+  },
+  {
     "name": "Arclab - Architect Web App",
     "desc": "ArcLab - Architect web app build using React Js. and GSAP.",
     "image": "arclab-react",
@@ -32,6 +41,7 @@
     "name": "Hepta Travel",
     "desc": "Ticket Booking website. Build using React Js, HTML and CSS.",
     "image": "hepta-react",
+    "category": "all",
     "links": {
       "view": "https://hepta-travel.netlify.app/",
       "code": "https://github.com/Hasnain-malikk/Hepta-React"
