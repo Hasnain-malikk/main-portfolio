@@ -20,6 +20,15 @@
     }
   },
   {
+    "name": "Auction-abode",
+    "desc": "AI-powered Real Estate bidding platform. Build using MERN Stack and NLP.",
+    "image": "auction-abode",
+    "links": {
+      "view": "https://creative-biscotti-378396.netlify.app/",
+      "code": "https://github.com/Hasnain-malikk/Auction-abode"
+    }
+  },
+  {
     "name": "Constra - Web App",
     "desc": "Constra - Civil Engineer web app build using React Js. and Swiper.",
     "image": "constra-react",
@@ -51,6 +60,7 @@
     "name": "E commerce Website",
     "image": "e-commerce",
     "desc": "E commerce web application. build using ReactJS, HTML and CSS.User can buy anything he desires.",
+    "category": "all",
     "links": {
       "view": "https://e-shop-nest.netlify.app/",
       "code": "https://github.com/Hasnain-malikk/E-commerce"
